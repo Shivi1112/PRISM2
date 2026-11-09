@@ -31,13 +31,13 @@ Processing (`model.py`):
 Tasks, in the default incremental order:
 
 | Task | Meaning | Type | Primary metric |
-|---|---|---|---|---|
-| `IHM` | in-hospital mortality (first 48 h) | binary | AUROC |
-| `LOS` | length of stay, 10 classes | ordinal  | macro-F1 |
-| `PHE` | phenotyping | multi-label |  macro-AUROC |
-| `REA` | readmission | binary | AUROC |
-| `DEC` | decompensation | binary | AUROC |
-| `DIA` | diagnosis | multi-label | macro-AUROC |
+|---|---|---|---|
+| `IHM` | in-hospital mortality (first 48 h) | binary | AUROC, AUPRC |
+| `LOS` | length of stay, 10 classes | ordinal  | macro-F1, micro=F1 |
+| `PHE` | phenotyping | multi-label |  macro-AUROC, micro AUROC |
+| `REA` | readmission | binary | AUROC, AUPRC |
+| `DEC` | decompensation | binary | AUROC, AUPRC |
+| `DIA` | diagnosis | multi-label | macro-AUROC, micro-AUROC |
 
 LOS classes: days 0 to 7 (one class each), 8 to 14 days, 14+ days.
 
