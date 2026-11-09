@@ -30,7 +30,7 @@ Processing (`model.py`):
 
 Tasks, in the default incremental order:
 
-| Task | Meaning | Type | Loss | Primary metric |
+| Task | Meaning | Type | Primary metric |
 |---|---|---|---|---|
 | `IHM` | in-hospital mortality (first 48 h) | binary | AUROC |
 | `LOS` | length of stay, 10 classes | ordinal  | macro-F1 |
